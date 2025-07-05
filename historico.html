@@ -2,7 +2,7 @@
 <html lang="pt">
   <head>
     <meta charset="UTF-8" />
-    <title>PetSpa - Início</title>
+    <title>Histórico de Agendamentos | PetSpa</title>
     <link rel="stylesheet" href="style.css" />
 
     <link
@@ -15,11 +15,11 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header class="header text-white py-4">
       <div class="container text-center">
         <img src="assets/petSpa.png" alt="Logo PetSpa" class="logo mb-2" />
-
         <p class="lead">Banho com amor para seu pet!</p>
 
         <nav
@@ -81,36 +81,97 @@
         </nav>
       </div>
     </header>
-    <main class="container my-5">
-      <section class="text-center mb-5">
-        <h2>Banho, amor e cuidado para seu pet</h2>
-        <p>Agende agora mesmo um banho para seu companheiro!</p>
-        <a href="agendamento.html" class="btn btn-primary">Agendar Banho</a>
-      </section>
 
-      <section class="row g-4 justify-content-center">
-        <div class="col-md-4">
-          <img
-            src="assets/pet-banho.webp"
-            alt="Pet tomando banho"
-            class="img-card"
-          />
-        </div>
-        <div class="col-md-4">
-          <img
-            src="assets/pet-banho-3.jpg"
-            alt="Pet molhado"
-            class="img-card"
-          />
-        </div>
-        <div class="col-md-4">
-          <img
-            src="assets/pet-banho2.png"
-            alt="Pet sendo seco"
-            class="img-card"
-          />
-        </div>
-      </section>
+    <main class="container my-5">
+      <h2 class="text-center mb-4">Histórico de Agendamentos</h2>
+
+      <div class="table-responsive">
+        <table
+          class="table table-striped table-bordered align-middle text-center"
+        >
+          <thead class="table-light">
+            <tr>
+              <th>Data</th>
+              <th>Horário</th>
+              <th>Nome do Pet</th>
+              <th>Espécie</th>
+              <th>Porte</th>
+              <th>Observações</th>
+              <th>Pagamento</th>
+              <th>Valor</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01/07/2025</td>
+              <td>10:30</td>
+              <td>Vampira</td>
+              <td>Cachorro</td>
+              <td>Médio</td>
+              <td>Tem medo de secador</td>
+              <td>Pix</td>
+              <td>R$ 60,00</td>
+              <td><span class="badge bg-success">Concluído</span></td>
+            </tr>
+            <tr>
+              <td>15/06/2025</td>
+              <td>14:00</td>
+              <td>Pólux</td>
+              <td>Gato</td>
+              <td>Pequeno</td>
+              <td>Evitar shampoo com cheiro forte</td>
+              <td>Cartão</td>
+              <td>R$ 55,00</td>
+              <td><span class="badge bg-danger">Cancelado</span></td>
+            </tr>
+            <tr>
+              <td>28/06/2025</td>
+              <td>09:00</td>
+              <td>Pistache</td>
+              <td>Gato</td>
+              <td>Pequeno</td>
+              <td>Ativo, gosta de brincar</td>
+              <td>Presencial</td>
+              <td>R$ 55,00</td>
+              <td><span class="badge bg-warning text-dark">Pendente</span></td>
+            </tr>
+            <tr>
+              <td>30/06/2025</td>
+              <td>13:15</td>
+              <td>Zero</td>
+              <td>Cachorro</td>
+              <td>Grande</td>
+              <td>Ansioso, usar guia com segurança</td>
+              <td>Pix</td>
+              <td>R$ 70,00</td>
+              <td><span class="badge bg-success">Concluído</span></td>
+            </tr>
+            <tr>
+              <td>25/06/2025</td>
+              <td>08:00</td>
+              <td>Luna</td>
+              <td>Gato</td>
+              <td>Pequeno</td>
+              <td>Recém-adotada, muito quieta</td>
+              <td>Cartão</td>
+              <td>R$ 55,00</td>
+              <td><span class="badge bg-success">Concluído</span></td>
+            </tr>
+            <tr>
+              <td>02/07/2025</td>
+              <td>16:30</td>
+              <td>Thor</td>
+              <td>Cachorro</td>
+              <td>Médio</td>
+              <td>Agitado, gosta de brincar com água</td>
+              <td>Presencial</td>
+              <td>R$ 60,00</td>
+              <td><span class="badge bg-warning text-dark">Pendente</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
 
     <footer class="footerStyle text-white text-center py-3 mt-auto">
